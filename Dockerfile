@@ -1,5 +1,4 @@
 FROM registry.fedoraproject.org/fedora-minimal:latest
-ADD ./install_vsix.sh /install_vsix.sh
 ADD ./install-cadquery.sh /install-cadquery.sh
 RUN bash /install-cadquery.sh
 ADD ./entrypoint.sh /entrypoint.sh
