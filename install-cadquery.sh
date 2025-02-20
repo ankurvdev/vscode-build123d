@@ -24,8 +24,8 @@ python3 -m pip install --root-user-action=ignore --upgrade git+https://github.co
 
 curl -fsSL https://code-server.dev/install.sh | sh
 
-install_vsix.sh "ms-python" "python"
-install_vsix.sh "ms-python" "black-formatter"
-install_vsix.sh "ms-vscode" "vs-keybindings"
-install_vsix.sh "charliermarsh" "ruff"
-install_vsix.sh "bernhard-42" "ocp-cad-viewer"
+install_vsix "ms-python" "python"
+install_vsix "ms-python" "black-formatter"
+install_vsix "ms-vscode" "vs-keybindings"
+install_vsix "charliermarsh" "ruff"
+install_vsix "bernhard-42" "ocp-cad-viewer"
