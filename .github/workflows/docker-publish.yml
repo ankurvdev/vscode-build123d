@@ -81,15 +81,6 @@ jobs:
           cache-from: type=gha
           cache-to: type=gha,mode=max
 
-      - name: Save Docker image to tar file
-        run: docker save  ${{ steps.meta.outputs.tags }} -o image.tar  # Export image as tar file
-
-      - name: Upload Docker image artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: image
-          path: image.tar  # Path to the exported Docker image tar file
-
       # Sign the resulting Docker image digest except on PRs.
       # This will only write to the public Rekor transparency log when the Docker
       # repository is public to avoid leaking data.  If you would like to publish
