@@ -85,7 +85,7 @@ jobs:
         run: docker save  ${{ steps.meta.outputs.tags }} -o image.tar  # Export image as tar file
 
       - name: Upload Docker image artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: image
           path: image.tar  # Path to the exported Docker image tar file
