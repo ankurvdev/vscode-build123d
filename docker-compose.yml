@@ -2,7 +2,6 @@ version: "3"
 services:
   build123d:
     image: ghcr.io/ankurvdev/vscode-build123d:main
-    restart: unless-stopped
     ports:
       - 5000:8080
     volumes:
