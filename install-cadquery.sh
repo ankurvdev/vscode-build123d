@@ -19,7 +19,7 @@ microdnf clean all
 
 python3.13 -m ensurepip
 python3.13 -m pip install --root-user-action=ignore --upgrade pip
-python3.13 -m pip install --root-user-action=ignore --upgrade black ruff ocp_vscode cadquery build123d
+python3.13 -m pip install --root-user-action=ignore --upgrade black ruff ocp_vscode cadquery build123d==0.10.0
 python3.13 -m pip install --root-user-action=ignore --upgrade git+https://github.com/gumyr/bd_warehouse
 
 curl -fsSL https://code-server.dev/install.sh | sh
