@@ -14,13 +14,13 @@ install_vsix() {
 }
 
 microdnf -y update
-microdnf -y install curl git libglvnd-glx python3-pip python3-virtualenv python3-NLopt
+microdnf -y install curl git libglvnd-glx python3.13 python3-pip python3-virtualenv python3-NLopt
 microdnf clean all
 
-python3 -m ensurepip
-python3 -m pip install --root-user-action=ignore --upgrade pip
-python3 -m pip install --root-user-action=ignore --upgrade black ruff ocp_vscode cadquery build123d
-python3 -m pip install --root-user-action=ignore --upgrade git+https://github.com/gumyr/bd_warehouse
+python3.13 -m ensurepip
+python3.13 -m pip install --root-user-action=ignore --upgrade pip
+python3.13 -m pip install --root-user-action=ignore --upgrade black ruff ocp_vscode cadquery build123d
+python3.13 -m pip install --root-user-action=ignore --upgrade git+https://github.com/gumyr/bd_warehouse
 
 curl -fsSL https://code-server.dev/install.sh | sh
 
