@@ -32,6 +32,7 @@ python3.14 -m pip install --root-user-action=ignore --upgrade black ruff ocp_vsc
 python3.14 -m pip install --root-user-action=ignore --upgrade git+https://github.com/gumyr/bd_warehouse@e365d742f0d874ab10606f60f2102149d7c3a89c
 # syntax=docker/dockerfile:1
 
+install_vscodium
 install_vsix "ms-python" "python"
 install_vsix "ms-python" "black-formatter"
 install_vsix "ms-vscode" "vs-keybindings"
