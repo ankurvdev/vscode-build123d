@@ -1,5 +1,5 @@
 {
     "python.linting.enabled": true,
     "workbench.colorTheme": "Default Dark Modern",
-    "python.defaultInterpreterPath": "python3.13"
+    "python.defaultInterpreterPath": "python3.14"
 }
