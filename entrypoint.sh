@@ -1,7 +1,10 @@
- /app/vscodium-web/bin/codium-server \
-    --host 0.0.0.0 \
-    --port 8080 \
-    --accept-server-license-terms \
-    --without-connection-token \
+/usr/bin/code-server \
+    --bind-addr 0.0.0.0:8080 \
+    --config /root/.config/code-server/config.yaml \
+    --auth none \
+    --disable-workspace-trust \
+    --disable-getting-started-override \
+    --disable-telemetry \
+    --disable-update-check \
     /data
 exit $?
