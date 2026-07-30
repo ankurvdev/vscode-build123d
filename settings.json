@@ -1,5 +1,10 @@
 {
     "python.linting.enabled": true,
-    "workbench.colorTheme": "Default Dark Modern",
-    "python.defaultInterpreterPath": "python3.14"
+    "workbench.colorTheme": "Dark Modern",
+    "python.defaultInterpreterPath": "python3.14",
+    "[python]": {
+        "editor.defaultFormatter": "charliermarsh.ruff"
+    },
+    "editor.renderWhitespace": "all",
+    "editor.formatOnSave": true
 }
