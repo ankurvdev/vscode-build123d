@@ -18,8 +18,8 @@ microdnf -y install curl git libglvnd-glx python3.14 python3-pip jq tar gzip
 
 python3.14 -m ensurepip
 python3.14 -m pip install --root-user-action=ignore --upgrade pip
-python3.14 -m pip install --root-user-action=ignore --upgrade ruff ocp_vscode cadquery build123d==0.12.0
-python3.14 -m pip install --root-user-action=ignore --upgrade git+https://github.com/gumyr/bd_warehouse@4006fb03b2a022d11abd41fc4c24a3a042f25ea0
+python3.14 -m pip install --root-user-action=ignore --upgrade ruff ocp_vscode cadquery build123d==0.13.0
+python3.14 -m pip install --root-user-action=ignore --upgrade git+https://github.com/gumyr/bd_warehouse@eed2da118da99007ad2d3904466ac0b24964f84d
 
 curl -fsSL https://code-server.dev/install.sh | sh
 
